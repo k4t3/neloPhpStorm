@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Taschenrechner
+	</title>
+	<style>
+		td  { border-style:solid; border-width:2px;
+		}
+
+		.number { background-color:#aaaaaa;
+		}
+
+		.operator   { background-color:#cccccc;
+		}
+
+	</style>
+	<script type="text/javascript">
+		var operand = "";
+
+		function add(wert){
+			window.document.Rechner.displayValue.value += wert;
+
+		}
+
+		function operate(operation){
+			window.document.Rechner.displayValue.value += operation;
+			window.document.Rechner.result.value = window.document.Rechner.displayValue.value;
+			window.document.Rechner.displayValue.value = ""
+		}
+
+		function calc(){
+			if (operand == "+"){
+			}else if(operand=="-")
+				var x = 0;
+			var y = 0;
+			x = eval(window.document.Rechner.displayValue.value);
+			window.document.Rechner.displayValue.value = x;
+			window.document.Rechner.result.value += window.document.Rechner.displayValue.value;
+			window.document.Rechner.displayValue.value = window.document.Rechner.result.value;
+			y = eval(window.document.Rechner.result.value);
+			window.document.Rechner.displayValue.value = y;
+			window.document.Rechner.result.value = ""
+
+		}
+
+		function setOperand(op){
+			if(op == "+"){
+				operand = op;
+			}else{
+				calc();
+				operand = op;
+			}
+			{
+				if (operand == "*"){
+
+				}else if(operand=="/")
+					var x = 0;
+				var y = 0;
+				x = eval(window.document.Rechner.displayValue.value);
+				window.document.Rechner.displayValue.value = x;
+				window.document.Rechner.result.value += window.document.Rechner.displayValue.value;
+				window.document.Rechner.displayValue.value = window.document.Rechner.result.value;
+				y = eval(window.document.Rechner.result.value);
+				window.document.Rechner.displayValue.value = y;
+				window.document.Rechner.result.value = ""
+			}
+		}
+	</script>
+</head>
+<body>
+<form name="Rechner">
+	<h1>Taschenrechner</h1>
+	<table cellpadding="10px" cellspacing="10px">
+		<tr>
+			<td colspan="5"><input name="result" type="text" /></td>
+		</tr>
+		<tr>
+			<td onmouseover="" colspan="5"><input name="displayValue" type="text" /></td>
+		</tr>
+		<tr>
+			<td class="number"><input type="button" onclick="add(7)" value="7" /></td>
+			<td class="number"><input type="button" onclick="add(8)" value="8" /></td>
+			<td class="number"><input type="button" onclick="add(9)" value="9" /></td>
+			<td class="operator"><input type="button" onclick="operate('+')" value="+" /></td>
+			<td class="operator"><input type="button" onclick="operate('-')" value="-" /></td>
+		</tr>
+		<tr>
+			<td class="number"><input type="button" onclick="add(4)" value="4" /></td>
+			<td class="number"><input type="button" onclick="add(5)" value="5" /></td>
+			<td class="number"><input type="button" onclick="add(6)" value="6" /></td>
+			<td class="operator"><input type="button" onclick="operate('*')" value="*" /></td>
+			<td class="operator"><input type="button" onclick="operate('/')" value="/" /></td>
+		</tr>
+		<tr>
+			<td class="number"><input type="button" onclick="add(1)" value="1" /></td>
+			<td class="number"><input type="button" onclick="add(2)" value="2" /></td>
+			<td class="number"><input type="button" onclick="add(3)" value="3" /></td>
+			<td colspan="2" class="operator"><input type="submit" onclick="calc()" value="=" /></td>
+		</tr>
+		<tr>
+			<td class="number" colspan="2"><input type="button" onclick="add(0)" value="0" /></td>
+			<td><input type="button" onclick="add('.')" value="." /></td>
+			<td colspan="2"><input type="reset" value="C" /></td>
+		</tr>
+		<table>
+</form>
+</body>
+</html>

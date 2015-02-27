@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adress Book</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0/dist/css/bootstrap-theme.min.css" />
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-static-top">
+	<div class="nav navbar-nav">
+		<ul class=" nav navbar-nav">
+			<li>
+				<a href="#"><h2>Adress Book</h2></a>
+			</li>
+		</ul>
+		<form class="navbar-form navbar-right" role="search">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+
+</nav>
+<div class="containter ">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th data-field="id">ID</th>
+				<th data-field="img"><i class="glyphicon glyphicon-user"></i>  IMG</th>
+				<th data-field="firstName"><i class="glyphicon glyphicon-heart"></i>  Vorname</th>
+				<th data-field="lastName"><i class="glyphicon glyphicon-heart"></i>  Nachname</th>
+				<th data-field="adress"><i class="glyphicon glyphicon-home"></i>  Adresse</th>
+				<th data-field="number"><i class="glyphicon glyphicon-pencil"></i>  Telefonnummer</th>
+				<th data-field="mobile"><i class="glyphicon glyphicon-asterisk"></i>  Mobil</th>
+				<th data-field="mail"><i class="glyphicon glyphicon-tag"></i>  Email</th>
+				<th data-field="homepage"><i class="glyphicon glyphicon-star"></i>  HP</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td> #01 </td>
+				<td><img class="image img-rounded" src="01.png"/></td>
+				<td>Panda </td>
+				<td>thePanda</td>
+				<td>Wolke 7 </td>
+				<td>0711</td>
+				<td></td>
+				<td>panda@mail.de</td>
+				<td></td>
+				<td><input type="checkbox" class="checkbox"></td>
+			</tr>
+			<tr>
+				<td> #02 </td>
+				<td><img class="image img-rounded" src="02.png"/></td>
+				<td>Koala</td>
+				<td>Bär</td>
+				<td>Villa Kunterbunt</td>
+				<td>0815</td>
+				<td></td>
+				<td>unicorn@unicorn.net</td>
+				<td></td>
+				<td><input type="checkbox" class="checkbox"></td>
+			</tr>
+			<tr>
+				<td> #03 </td>
+				<td><img class="image img-rounded" src="03.png"/></td>
+				<td>Owl</td>
+				<td> theOwl</td>
+				<td>Unter der Brücke </td>
+				<td>90210</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><input type="checkbox" class="checkbox"></td>
+			</tr>
+			<tr>
+				<td> #04 </td>
+				<td><img class="image img-rounded" src="04.png"/></td>
+				<td>Teddy </td>
+				<td>Teddywood</td>
+				<td>Wo der Pfeffer wächst</td>
+				<td>4711</td>
+				<td></td>
+				<td>teddy@example.com</td>
+				<td>teddysworld.com</td>
+				<td><input type="checkbox" class="checkbox"></td>
+			</tr>
+		</tbody>
+
+	</table>
+</div>
+
+
+<div class="row">
+	<div class="text-center col-sm-6">
+
+	</div>
+	<div class="text-center col-sm-3">
+		<p><a class="btn btn-default" href="#" role="button" value="add" onclick="add()">Kontakt hinzufügen »</a></p>
+	</div>
+	<div class="text-center col-sm-3">
+		<p><a class="btn btn-default" href="#" role="button" onClick="">löschen »</a></p>
+	</div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap-3.2.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

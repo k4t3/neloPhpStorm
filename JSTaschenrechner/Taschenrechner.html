@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.2.0/dist/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="Taschenrechner.css" />
+	<script type="text/javascript" src="Taschenrechner.js"></script>
+</head>
+<body>
+
+<form name="frame">
+<div class="container">
+
+	<input type="text" name="display"class="display">
+	<div class="btn-group">
+		<button type="reset" class="btn btn-default btn-lg" value="C" onClick=runClear()> C </button>
+		<button type="reset" class="btn btn-default btn-lg" value="^2" onClick="quad()"> ^2 </button>
+		<button type="reset" class="btn btn-default btn-lg" value="sqrt" onClick="runSqrt()"> sqrt </button>
+		<button type="button" class="btn btn-default btn-lg" value="/" onClick="run('/')"> / </button>
+	</div>
+	<div class="btn-group">
+		<button type="button" class="btn btn-default btn-lg" value="7" onClick="run(7)"> 7 </button>
+		<button type="button" class="btn btn-default btn-lg" value="8" onClick="run(8)"> 8 </button>
+		<button type="button" class="btn btn-default btn-lg" value="9" onClick="run(9)"> 9 </button>
+		<button type="button" class="btn btn-default btn-lg" value="*" onClick="run('*')"> * </button>
+	</div>
+	<div class="btn-group">
+		<button type="button" class="btn btn-default btn-lg" value="4" onClick="run(4)"> 4 </button>
+		<button type="button" class="btn btn-default btn-lg" value="5" onClick="run(5)"> 5 </button>
+		<button type="button" class="btn btn-default btn-lg" value="6" onClick="run(6)"> 6 </button>
+		<button type="button" class="btn btn-default btn-lg" value="-" onClick="run('-')"> - </button>
+	</div>
+	<div class="btn-group">
+		<button type="button" class="btn btn-default btn-lg" value="1" onClick="run(1)"> 1 </button>
+		<button type="button" class="btn btn-default btn-lg" value="2" onClick="run(2)"> 2 </button>
+		<button type="button" class="btn btn-default btn-lg" value="3" onClick="run(3)"> 3 </button>
+		<button type="button" class="btn btn-default btn-lg" value="+" onclick="run('+')"> + </button>
+	</div>
+	<div class="btn-group">
+		<button type="button" class="btn btn-default btn-lg" value="0" onClick="run(0)"> 0 </button>
+		<button type="button" class="btn btn-default btn-lg" value="00" onClick="run('00')"> 00 </button>
+		<button type="button" class="btn btn-default btn-lg" value="," onClick="run('.')"> . </button>
+		<button type="button" class="btn btn-default btn-lg" value="evalu" onClick=evalu()> = </button>
+	</div>
+</div>
+</form>
+
+
+<textarea id="sheet" style="width: 100%; height: 800px">
+</textarea>
+
+</body>
+</html>
+
+

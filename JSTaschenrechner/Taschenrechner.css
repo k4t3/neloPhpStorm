@@ -1,0 +1,7 @@
+.container {
+	width: 300px;
+}
+.input.display {
+	width: 200px!important;
+	height: 50px!important;
+}

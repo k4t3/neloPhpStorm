@@ -1,0 +1,71 @@
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.none {
+  float: none;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.hideoverflow {
+  overflow: hidden;
+}
+.textdecnone {
+  text-decoration: none;
+}
+.clearfix {
+  display: block;
+}
+.wrap {
+  position: relative;
+  vertical-align: baseline;
+  display: block;
+}
+.bold {
+  font-weight: bold;
+}
+.none {
+  border: none;
+}
+.text-align-center {
+  text-align: center;
+}
+.box_shadow {
+  box-shadow: 5px 5px 5px -5px rgba(170, 170, 170, 0.7), -5px 5px 5px -5px rgba(170, 170, 170, 0.7);
+}
+.bordernone {
+  border: none;
+}
+.bordertop {
+  border-top: 1px solid #cccccc;
+}
+.margin-padding-zero {
+  margin: 0;
+  padding: 0;
+}
+.iconswidthheight {
+  width: 10em;
+  height: 4em;
+}
+.fontfamilybasebold {
+  font-family: Anton, sans-serif;
+  font-weight: bold;
+}
+.margtop10 {
+  margin-top: 10px;
+}
+.margtop20 {
+  margin-top: 20px;
+}
+.marg {
+  margin-right: 10px;
+}
